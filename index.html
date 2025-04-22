@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Self Help and Self Care Comment Generator</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+max-width: 800px;
+margin: auto;
+padding: 20px;
+}
+select, input {
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+font-size: 1rem;
+}
+.output {
+margin-top: 20px;
+padding: 15px;
+background-color: #f0f0f0;
+border: 1px solid #ccc;
+}
+</style>
+</head>
+<body>
+
+<h2>Self Help and Self Care Comment Generator</h2>
+
+<label for="studentName">Student First Name:</label>
+<input type="text" id="studentName" placeholder="e.g. Jordan" />
+
+<label for="pronouns">Preferred Pronouns:</label>
+<select id="pronouns">
+<option value="">-- Select pronouns --</option>
+<option value="he/him">He/Him</option>
+<option value="she/her">She/Her</option>
+<option value="they/their">They/Their</option>
+</select>
+
+<label for="strength">Student Strength:</label>
+<select id="strength">
+<option value="">-- Select a strength --</option>
+<option value="is able to follow a morning routine with little support">is able to follow a morning routine with little support</option>
+<option value="regularly uses coping strategies when upset">regularly uses coping strategies when upset</option>
+<option value="is making good choices during free time">is making good choices during free time</option>
+<option value="shows improvement in personal hygiene tasks">shows improvement in personal hygiene tasks</option>
+<option value="follows safety rules with increasing consistency">follows safety rules with increasing consistency</option>
+<option value="asks for help when needed">asks for help when needed</option>
+<option value="uses kind words with others">uses kind words with others</option>
+<option value="is respectful during group activities">is respectful during group activities</option>
+<option value="is working well toward independent dressing">is working well toward independent dressing</option>
+<option value="follows simple instructions the first time">follows simple instructions the first time</option>
+<option value="completes daily check-ins consistently">completes daily check-ins consistently</option>
+<option value="shows a positive attitude toward self-care tasks">shows a positive attitude toward self-care tasks</option>
+<option value="stays calm when routines change">stays calm when routines change</option>
+<option value="waits patiently for their turn">waits patiently for their turn</option>
+<option value="uses tools like schedules or checklists to stay on track">uses tools like schedules or checklists to stay on track</option>
+<option value="is beginning to recognize personal emotions">is beginning to recognize personal emotions</option>
+<option value="takes responsibility for their belongings">takes responsibility for their belongings</option>
+<option value="is learning to make healthy snack choices">is learning to make healthy snack choices</option>
+<option value="shows confidence when trying new self-care routines">shows confidence when trying new self-care routines</option>
+<option value="remembers to wash hands without prompting">remembers to wash hands without prompting</option>
+</select>
+
+<label for="need">Area of Need:</label>
+<select id="need">
+<option value="">-- Select an area of need --</option>
+<option value="needs reminders to complete personal hygiene routines.">needs reminders to complete personal hygiene routines.</option>
+<option value="is working on identifying emotions in the moment.">is working on identifying emotions in the moment.</option>
+<option value="needs help to stay calm when routines change.">needs help to stay calm when routines change.</option>
+<option value="benefits from one-to-one support for new tasks.">benefits from one-to-one support for new tasks.</option>
+<option value="needs prompts to ask for help when struggling.">needs prompts to ask for help when struggling.</option>
+<option value="is working on keeping personal items organized.">is working on keeping personal items organized.</option>
+<option value="needs support to follow safety rules consistently.">needs support to follow safety rules consistently.</option>
+<option value="finds it hard to wait for their turn.">finds it hard to wait for their turn.</option>
+<option value="needs guidance to make healthy food choices.">needs guidance to make healthy food choices.</option>
+<option value="needs help managing free time appropriately.">needs help managing free time appropriately.</option>
+<option value="is working on using respectful language with peers.">is working on using respectful language with peers.</option>
+<option value="benefits from visual supports for daily routines.">benefits from visual supports for daily routines.</option>
+<option value="needs encouragement to complete self-care steps independently.">needs encouragement to complete self-care steps independently.</option>
+<option value="is developing the ability to stay focused during personal tasks.">is developing the ability to stay focused during personal tasks.</option>
+<option value="needs assistance recognizing when to take a break.">needs assistance recognizing when to take a break.</option>
+<option value="is learning to manage emotional reactions calmly.">is learning to manage emotional reactions calmly.</option>
+<option value="needs to increase participation during group tasks.">needs to increase participation during group tasks.</option>
+<option value="is building confidence in making independent choices.">is building confidence in making independent choices.</option>
+<option value="requires structured reminders for transitions.">requires structured reminders for transitions.</option>
+<option value="needs continued practice with handwashing routines.">needs continued practice with handwashing routines.</option>
+</select>
+
+<label for="nextStep">Next Step:</label>
+<select id="nextStep">
+<option value="">-- Select a next step --</option>
+<option value="should continue using visuals to guide routines.">should continue using visuals to guide routines.</option>
+<option value="is encouraged to use calming strategies when upset.">is encouraged to use calming strategies when upset.</option>
+<option value="will benefit from practicing hygiene routines daily.">will benefit from practicing hygiene routines daily.</option>
+<option value="is encouraged to follow routines with fewer prompts.">is encouraged to follow routines with fewer prompts.</option>
+<option value="should work on naming feelings in different situations.">should work on naming feelings in different situations.</option>
+<option value="will benefit from practicing asking for help when unsure.">will benefit from practicing asking for help when unsure.</option>
+<option value="should try organizing personal belongings daily.">should try organizing personal belongings daily.</option>
+<option value="is encouraged to check a visual schedule throughout the day.">is encouraged to check a visual schedule throughout the day.</option>
+<option value="should continue developing independence with dressing tasks.">should continue developing independence with dressing tasks.</option>
+<option value="is encouraged to reflect on personal choices during check-ins.">is encouraged to reflect on personal choices during check-ins.</option>
+<option value="should practice turn-taking during group activities.">should practice turn-taking during group activities.</option>
+<option value="will benefit from guided practice in snack selection.">will benefit from guided practice in snack selection.</option>
+<option value="should continue working on respectful communication.">should continue working on respectful communication.</option>
+<option value="should try setting a daily hygiene goal.">should try setting a daily hygiene goal.</option>
+<option value="should practice staying calm when routines change.">should practice staying calm when routines change.</option>
+<option value="is encouraged to participate more actively in group settings.">is encouraged to participate more actively in group settings.</option>
+<option value="should build awareness of emotional triggers.">should build awareness of emotional triggers.</option>
+<option value="will benefit from reminders to take breaks when needed.">will benefit from reminders to take breaks when needed.</option>
+<option value="is encouraged to follow safety guidelines without prompts.">is encouraged to follow safety guidelines without prompts.</option>
+<option value="should keep practicing personal care steps daily.">should keep practicing personal care steps daily.</option>
+</select>
+
+<label for="closing">Closing Statement:</label>
+<select id="closing">
+<option value="">-- Select a closing statement --</option>
+<option value="Keep building those daily life skills—you're doing great!">Keep building those daily life skills—you're doing great!</option>
+<option value="Great progress so far—keep up the effort!">Great progress so far—keep up the effort!</option>
+<option value="Proud of the growth you're showing this term.">Proud of the growth you're showing this term.</option>
+<option value="Looking forward to seeing even more independence!">Looking forward to seeing even more independence!</option>
+<option value="Keep working toward your personal goals—you're getting there!">Keep working toward your personal goals—you're getting there!</option>
+<option value="You’re doing important work—keep it up!">You’re doing important work—keep it up!</option>
+<option value="Happy to see your self-care confidence growing!">Happy to see your self-care confidence growing!</option>
+<option value="Thanks for your continued effort—keep going!">Thanks for your continued effort—keep going!</option>
+</select>
+
+<div class="output">
+<h3>Generated Comment:</h3>
+<p id="commentPreview">Your final comment will appear here.</p>
+</div>
+
+<script>
+function generateComment() {
+const name = document.getElementById("studentName").value.trim();
+const pronouns = document.getElementById("pronouns").value.trim();
+const strength = document.getElementById("strength").value;
+const need = document.getElementById("need").value;
+const nextStep = document.getElementById("nextStep").value;
+const closing = document.getElementById("closing").value;
+const preview = document.getElementById("commentPreview");
+
+if (!name || !pronouns || !strength || !need || !nextStep || !closing) {
+preview.textContent = "Please complete all selections to generate the comment.";
+return;
+}
+
+const [subjectPronoun] = pronouns.split("/") || ["they"];
+const capPronoun = subjectPronoun.charAt(0).toUpperCase() + subjectPronoun.slice(1);
+const capName = name.charAt(0).toUpperCase() + name.slice(1);
+
+const comment = `${capName} ${strength}. ${capPronoun} ${need.replace(/\.$/, "")}. ${capName} ${nextStep.replace(/\.$/, "")}. ${closing}`;
+preview.textContent = comment;
+}
+
+document.querySelectorAll('select, input').forEach(el => {
+el.addEventListener('change', generateComment);
+});
+</script>
+
+</body>
+</html>
